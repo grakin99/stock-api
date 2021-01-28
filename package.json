@@ -1,0 +1,32 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "api stock app",
+  "main": "index.js",
+  "api-key": "7A6FRUARJTW7L8VY",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grakin99/assignment-1.git"
+  },
+  "keywords": [
+    "stock",
+    "api",
+    "school",
+    "nait"
+  ],
+  "author": "graham kineshanko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grakin99/assignment-1/issues"
+  },
+  "homepage": "https://github.com/grakin99/assignment-1#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "parcel": "^1.12.4"
+  }
+}
