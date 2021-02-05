@@ -30,7 +30,7 @@ function template(data) {
         </div>
        <div>
         <h4>Low</h4>
-        <p>$USD{{Low}}</p>
+        <p>$USD {{Low}}</p>
       </div>
       <div>
         <h4>Change Percentage</h4>
