@@ -6,6 +6,10 @@ import { createElement } from "./controllers/createElement";
 import { addToDom } from "./utils/addToDom";
 import deleteLastStock from "./utils/remove-from-dom.js";
 
+/**
+ * @event click event that triggers the api call with the text the user wrote
+ * */ 
+
 document.querySelector("#ticker-submit").addEventListener("click", () => {
   const userInput = input();
   data(userInput)

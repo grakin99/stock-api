@@ -1,3 +1,8 @@
+/**
+ * @param {Object} data passed from get-data.js
+ * @function template provides a template literal and fills it with data using the moustache.js templating engine via cdn (node does not work with current implementation)
+ * */ 
+
 function template(data) {
   return Mustache.render(
     `
