@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.js"></script>
     <title>stock api school assignment</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <section>
-      <h1>Stock Checker</h1>
-      <section>
-        <h2>Input a stock ticker</h2>
-        <div>
-          <input type="text" name="stock-ticker" id="ticker-id" />
-          <button id="ticker-submit">Show me the info!</button>
-        </div>
-      </section>
+    <h1>Stonks</h1>
+    <section class="ticker-input">
+      <h2>Input a stock ticker</h2>
+      <div>
+        <input placeholder="gme" type="text" name="stock-ticker" id="ticker-id" />
+        <button id="ticker-submit">Show me the info!</button>
+      </div>
     </section>
-    <section class="stock-info">
-      <h2>Doge</h2>
-      <div class="stock-grid"></div>
-    </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>

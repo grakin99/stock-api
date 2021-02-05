@@ -1,23 +1,23 @@
 /***
  * @method fetchData Calls the alphaVantage api using my personal key.
- * @export fetchData export for use in the index calling the function on a DOM event
+ * @param userInput  input passed from the get-user-input.js module in string form in index.js
  **/
 
-import userInput from "./user-input";
+import { createElement } from "../controllers/createElement";
+import { addToDom } from "../utils/addToDom";
 
-function fetchData() {
-  fetch(
-    `https://www.alphavantage.co/query?function=GLOBAl_QUOTE&symbol=${userInput()}&apikey=7A6FRUARJTW7L8VY`
+function fetchData(userInput) {
+  return fetch(
+    `https://www.alphavantage.co/query?function=GLOBAl_QUOTE&symbol=${userInput}&apikey=7A6FRUARJTW7L8VY`
   )
-    .then((data) => data.json())
     .then((data) => {
-      console.log(data["Global Quote"]["01. symbol"]);
-      return data["Global Quote"];
+      return data;
     })
-    .catch((err) => {
-      err = "Invalid Stock ticker";
-      console.warn(err);
-      return err;
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      return data["Global Quote"];
     });
 }
 export default fetchData;

@@ -1,0 +1,50 @@
+.ticker-input {
+  font-family: "Courier New", Courier, monospace;
+  input{
+    display: block;
+    width: 90%;
+    padding: 1vw;
+    margin: 0 auto;
+  }
+
+  button{ 
+    border-radius: 0.5rem;
+    border-color: unset;
+    background-color: skyblue;
+    padding: 1vw;
+    display: block;
+
+    margin: 0 auto;
+    margin-top: 2vw;
+    width: 90%;
+  }
+}
+
+.stock-info-container {
+  font-size: clamp(2vw, 3vw);
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(3, 1fr);
+  h3 {
+    grid-column: 1 / span 3;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  div:last-of-type {
+    grid-column: 1 / span 3;
+  }
+
+  h3{
+      padding: 5vw;  }
+
+  div,
+  h3 {
+    border: 0.25vw outset orangered;
+
+    padding: 0.5vw;
+  }
+}
